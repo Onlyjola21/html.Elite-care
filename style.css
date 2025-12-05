@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px;
+  font-family: "teachers", "san serif";
+}
+
+.logo-image {
+  width: 90px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ul a {
+  text-decoration: none;
+  margin-left: 110px;
+  color: white;
+}
+
+ul a:hover {
+  color: grey;
+}
+
+.nav-link-right {
+  background-color: white;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.nav-link-right a {
+  color: #000;
+  text-decoration: none;
+  font-family: "teachers", "sans-serif";
+}
+
+.nav-link-right a:hover {
+  color: rgb(198, 183, 183);
+}
+
+.main-container {
+  background-image: url(./assets/images/sign\ up\ optional.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.hero-headings h1 {
+  /* margin-bottom: 10px */
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 80px;
+  font-weight: 600;
+}
+
+.hero-headings p {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.hero-headings {
+  max-width: 950px;
+
+  font-size: 33px;
+}
+
+.hero-headings .btn {
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  width: auto;
+  font-size: 20px;
+  height: 40px;
+  padding: 10px 50px;
+  background-color: rgb(228, 87, 87);
+  border: none;
+  outline: none;
+  border-radius: 17px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-headings .btn:hover {
+  background-color: rgb(248, 86, 86);
+}
+
+.features {
+  background-color: rgb(248, 243, 244);
+  padding-top: 15px;
+  /* height: 300px; */
+  padding-bottom: 7px;
+}
+
+.features-content {
+  margin-top: 5px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 70px;
+  gap: 20px;
+}
+
+.features-heading {
+  font-size: 30px;
+}
+
+.features i {
+  position: relative;
+  margin-left: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.features h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.features h3 {
+  margin-left: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  /* max-width: 90px; */
+}
+
+.specialist {
+  text-align: center;
+}
+
+.healthcare {
+  text-align: center;
+}
+
+.diagnosis {
+  text-align: center;
+}
+
+.optimised {
+  text-align: center;
+}
+
+.modern {
+  text-align: center;
+}
+
+.features p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.circle {
+  background-color: rgba(250, 201, 209, 0.927);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 179px;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  /* padding-bottom: 20px; */
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 200px;
+  height: 250px;
+  border-radius: 0 20px 20px 0px;
+}
+
+.first-card {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  background-color: rgba(250, 201, 209, 0.927);
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.second-card {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  background-color: rgba(250, 201, 209, 0.927);
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.card-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.schedule {
+  /* margin-left: 20px; */
+  padding: 15px;
+}
+
+.receive {
+  padding: 15px;
+}
+
+span {
+  color: rgba(242, 81, 23, 0.96);
+}
+
+.card-content {
+  margin-bottom: 10px;
+}
+
+.card-number {
+  position: absolute;
+  font-weight: 900;
+  font-size: 90px;
+  margin-top: -70px;
+  margin-left: 10px;
+  font-family: "teachers", sans-serif;
+}
+
+.card-number-second {
+  font-family: "teachers", sans-serif;
+  font-weight: 900;
+  font-size: 90px;
+  margin-left: 600px;
+  margin-right: -200px;
+}
+
+.box {
+  background-color: rgb(248, 243, 244);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.box-container {
+  background-color: rgb(248, 243, 244);
+  padding: 20px;
+}
+
+.meet {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.box1 {
+  width: 450px;
+  height: 530px;
+  border-radius: 15px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.box2 {
+  width: 450px;
+  height: 530px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.box3 {
+  width: 450px;
+  height: 530px;
+  border-radius: 15px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.box-image {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px 15px 0 0;
+}
+
+.box-content {
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.box-content-p {
+  margin: 10px;
+  padding-left: 10px;
+  color: grey;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  /* height: 600px; */
+}
+
+table a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+table a:first-child {
+  margin-top: 10px;
+}
+
+tr {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-links {
+  margin-left: 700px;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.footer-links a:hover {
+  color: grey;
+}
+
+th {
+  font-size: 26px;
+}
+
+.social-logo {
+  width: 30px;
+  margin: 20px;
+}
+
+.elite-footer-logo {
+  width: 120px;
+  margin-top: 5px;
+  margin-left: 55px;
+}
+
+.footer-line {
+  margin: 15px;
+}
+
+.footer-last-paragraph {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.reserved {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-container {
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/images/new\ login.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 320px;
+  padding-bottom: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.915);
+  width: 600px;
+  padding: 15px 80px 15px 80px;
+  border-radius: 15px;
+}
+
+.form-icon {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-bottom: 8px;
+}
+
+.input-box {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin: 10px 0;
+  outline: none;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 35px 10px 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  font-size: 16px;
+  box-shadow: inset 2px 2px 2px rgb(28, 28, 28);
+  margin: 10px 0;
+}
+
+.forgot-password {
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot-password label input {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: black;
+}
+
+.forgot-password a:hover {
+  color: grey;
+}
+
+.login-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 19px;
+  font-weight: 900;
+  background-color: rgb(228, 87, 87);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: rgb(248, 86, 86);
+}
+
+.register-link {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.register-link a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(228, 87, 87);
+  font-weight: 800;
+  font-family: "teachers", sans-serif;
+}
+
+.register-link a:hover {
+  color: black;
+}
+
+.hero-form {
+  background-color: transparent;
+}
+
+.main2-container {
+  background-image: url(./assets/images/main2.0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+}
+
+.hero-form {
+  margin-top: 30px;
+  /* margin-left: 50px; */
+}
+
+.hero-input-box {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* margin: 10px 0; */
+  outline: none;
+}
+
+.hero-input-box input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 35px 10px 20px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  box-shadow: inset 0.3px 0.3px 0 0;
+  /* margin: 10px 0; */
+}
+
+.hero-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 19px;
+  font-weight: 900;
+  background-color: rgb(228, 87, 87);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: rgb(248, 86, 86);
+}
+
+.new-card {
+  background-color: #fcfbfa;
+  width: 1000px;
+  position: absolute;
+  color: black;
+  left: 430px;
+  top: 430px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  height: 500px;
+  border-radius: 15px;
+  gap: 30px;
+  line-height: 1;
+}
+
+.new-doctor-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 3px solid red;
+  padding: 8px;
+}
+
+.call {
+  display: flex;
+}
+
+.location {
+  display: flex;
+}
+
+.location-icon {
+  width: 30px;
+  height: 22px;
+}
+
+.call-icon {
+  width: 27px;
+  height: 22px;
+}
+
+.new-first-card {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 230px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.cad {
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.new-card-btn {
+  font-weight: 800;
+  padding: 15px 25px 15px 25px;
+  font-family: "teachers", sans-serif;
+  font-size: 1.2rem;
+  width: 240px;
+  border: 0;
+  outline: none;
+  background-color: rgb(229, 65, 65);
+  color: white;
+  border-radius: 9px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.new-card-btn:hover {
+  background-color: red;
+}
+
+.new-second-card {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 230px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.new-third-card {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 230px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.np {
+  line-height: 1;
+}
